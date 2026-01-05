@@ -4,386 +4,639 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaigonTech - Đổi mới kỹ thuật số</title>
+    <meta name="description"
+        content="Hỗ trợ doanh nghiệp phát triển thông qua công nghệ - Chúng tôi chuyên quản lý và bảo trì doanh nghiệp của bạn">
+    <title>Saigontech - Giải Pháp Công Nghệ Cho Doanh Nghiệp</title>
 
-    <!-- Fonts: Noto Sans JP -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+    <!-- Google Fonts - Noto Sans JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top sgtech-new-navbar">
+    <!-- ============================================
+         Header Section
+         ============================================ -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./assets/images/header_logo01.png" alt="saigontech">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/header_logo01.png" alt="saigon-tech Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
-                    <span class="fas fa-bars"></span>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gioi-thieu.html">Giới thiệu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="dich-vu.html">Dịch vụ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li>
-                        <li class="nav-item mt-3 mt-lg-0 ml-lg-3">
-                            <a href="lien-he.html" class="btn btn-primary text-white d-block d-lg-inline-block">Tư vấn
-                                ngay</a>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dich-vu.html">Dịch vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lien-he.html">Liên hệ</a>
                         </li>
                     </ul>
+
+                    <!-- CTA Button -->
+                    <div class="d-flex">
+                        <a href="lien-he.html" class="btn btn-primary-custom">
+                            Tư vấn ngay
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="sgtech-new-hero-section d-flex align-items-center">
-        <div class="container sgtech-new-hero-content">
-            <div class="row">
-                <div class="col-lg-10 col-md-10 mx-auto mx-lg-0">
-                    <h1 class="sgtech-new-hero-title">Đổi mới kỹ thuật số của bạn cùng Saigon Tech</h1>
-                    <p class="sgtech-new-hero-subtitle">Giải pháp phần mềm hiện đại, mở rộng kinh doanh tại đô thị.</p>
-                    <div class="hero-btns">
-                        <a href="#" class="btn btn-primary mr-3 mb-2">Khám phá</a>
-                        <a href="#" class="btn btn-outline-light mb-2">Liên hệ ngay</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="sgtech-new-section-padding">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Dịch Vụ Chính Của Chúng Tôi</h2>
-            </div>
-            <div class="row">
-                <!-- Service 1 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="sgtech-new-service-card">
-                        <div class="sgtech-new-service-icon">
-                            <i class="fas fa-clipboard-check"></i>
-                        </div>
-                        <h4 class="sgtech-new-service-title">Chuyển đổi số</h4>
-                        <p class="sgtech-new-service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            do eiusmod tempor.</p>
-                        <a href="#" class="btn btn-sm btn-primary">Xem chi tiết</a>
-                    </div>
-                </div>
-                <!-- Service 2 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="sgtech-new-service-card">
-                        <div class="sgtech-new-service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h4 class="sgtech-new-service-title">Phát triển phần mềm</h4>
-                        <p class="sgtech-new-service-desc">Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore.</p>
-                        <a href="#" class="btn btn-sm btn-primary">Xem chi tiết</a>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="sgtech-new-service-card">
-                        <div class="sgtech-new-service-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4 class="sgtech-new-service-title">Giải pháp Cloud</h4>
-                        <p class="sgtech-new-service-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                            qui officia.</p>
-                        <a href="#" class="btn btn-sm btn-primary">Xem chi tiết</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="sgtech-new-section-padding sgtech-new-about-section">
+    <!-- ============================================
+         Hero Section
+         ============================================ -->
+    <section class="hero-section" id="hero">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
-                    <div class="sgtech-new-about-img">
-                        <img src="https://placehold.co/600x400/eeeeee/333?text=Office+Image" alt="About Saigon Tech">
+                <!-- Hero Content -->
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Hỗ trợ doanh nghiệp phát triển thông qua công nghệ
+                        </h1>
+                        <p class="hero-subtitle">
+                            Chúng tôi cung cấp các giải pháp sáng tạo giúp doanh nghiệp của bạn phát triển và thành công
+                            trong thời đại số.
+                            Chuyển đổi hoạt động kinh doanh với công nghệ tiên tiến.
+                        </p>
+                        <a href="#services" class="btn btn-primary-custom btn-lg">
+                            <i class="fas fa-arrow-right me-2"></i>
+                            Tìm hiểu thêm
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 sgtech-new-about-content order-1 order-lg-2 mb-4 mb-lg-0">
-                    <h2>Về Saigon Tech</h2>
-                    <div class="sgtech-new-about-message">
-                        <i class="fas fa-quote-left sgtech-new-quote-icon"></i>
-                        <h5>Message from Saigon Tech</h5>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur scelerisque leo. Vivamus eget nibh. Etiam cursus leo vel
-                        metus. Nulla facilisi. Aenean nec eros.</p>
-                    <a href="#" class="btn btn-primary mt-3">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Development Areas -->
-    <section class="sgtech-new-section-padding">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Lĩnh Vực Phát Triển</h2>
-            </div>
-            <div class="row">
-                <!-- Dev 1 -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="sgtech-new-dev-card">
-                        <div class="row h-100">
-                            <div class="col-3 d-flex align-items-center justify-content-center">
-                                <i class="fas fa-brain sgtech-new-dev-icon"></i>
-                            </div>
-                            <div class="col-9">
-                                <h4 class="sgtech-new-dev-title">AI & Dữ liệu lớn</h4>
-                                <div class="sgtech-new-dev-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                    <a href="#" class="sgtech-new-dev-link">Khám phá <i
-                                            class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dev 2 -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="sgtech-new-dev-card">
-                        <div class="row h-100">
-                            <div class="col-3 d-flex align-items-center justify-content-center">
-                                <i class="fas fa-mobile-alt sgtech-new-dev-icon"></i>
-                            </div>
-                            <div class="col-9">
-                                <h4 class="sgtech-new-dev-title">Web & Mobile App</h4>
-                                <div class="sgtech-new-dev-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                    <a href="#" class="sgtech-new-dev-link">Khám phá <i
-                                            class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dev 3 -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="sgtech-new-dev-card">
-                        <div class="row h-100">
-                            <div class="col-3 d-flex align-items-center justify-content-center">
-                                <i class="fas fa-cloud-upload-alt sgtech-new-dev-icon"></i>
-                            </div>
-                            <div class="col-9">
-                                <h4 class="sgtech-new-dev-title">Điện toán đám mây</h4>
-                                <div class="sgtech-new-dev-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                    <a href="#" class="sgtech-new-dev-link">Khám phá <i
-                                            class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dev 4 -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="sgtech-new-dev-card">
-                        <div class="row h-100">
-                            <div class="col-3 d-flex align-items-center justify-content-center">
-                                <i class="fas fa-network-wired sgtech-new-dev-icon"></i>
-                            </div>
-                            <div class="col-9">
-                                <h4 class="sgtech-new-dev-title">Hệ thống IoT</h4>
-                                <div class="sgtech-new-dev-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                    <a href="#" class="sgtech-new-dev-link">Khám phá <i
-                                            class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Hero Image -->
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
+                            alt="Đội ngũ hợp tác" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Team -->
-    <section class="sgtech-new-section-padding bg-light">
+    <!-- ============================================
+         Features Section
+         ============================================ -->
+    <section class="features-section section-padding" id="features">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Đội Ngũ Chuyên Gia</h2>
+            <!-- Section Header -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <span class="feature-label">
+                        <i class="fas fa-chart-line me-2"></i>
+                        Tại sao chọn chúng tôi
+                    </span>
+                    <h2 class="section-title">
+                        Mục tiêu của chúng tôi là cải thiện lợi nhuận đầu tư và giảm chi phí
+                    </h2>
+                    <p class="section-subtitle">
+                        Chúng tôi giúp doanh nghiệp tối ưu hóa hoạt động và phát huy tối đa tiềm năng thông qua các giải
+                        pháp công nghệ chiến lược.
+                    </p>
+                </div>
             </div>
+
+            <!-- Feature Cards -->
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Chiến lược dự án</h4>
+                        <p>
+                            Chúng tôi phát triển các chiến lược toàn diện phù hợp với mục tiêu kinh doanh của bạn,
+                            đảm bảo mỗi dự án mang lại giá trị tối đa và tăng trưởng bền vững.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Tự động hóa phần mềm</h4>
+                        <p>
+                            Tối ưu hóa quy trình làm việc với các giải pháp tự động hóa thông minh,
+                            giảm công việc thủ công và cải thiện hiệu quả hoạt động.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Services Section
+         ============================================ -->
+    <section class="services-section section-padding" id="services">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Services Content -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="services-content">
+                        <span class="feature-label">
+                            <i class="fas fa-briefcase me-2"></i>
+                            Dịch vụ của chúng tôi
+                        </span>
+                        <h2 class="section-title">
+                            Chúng tôi chuyên quản lý và bảo trì doanh nghiệp của bạn
+                        </h2>
+
+                        <!-- Service Subsection -->
+                        <h3 class="mt-4 mb-4">
+                            Tư vấn số để phát triển mục tiêu của bạn
+                        </h3>
+
+                        <!-- Service Items -->
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5>Chiến lược kinh doanh</h5>
+                                <p>Phát triển các chiến lược thành công phù hợp với mục tiêu kinh doanh và cơ hội thị
+                                    trường.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5>Chuyển đổi số</h5>
+                                <p>Chuyển đổi doanh nghiệp của bạn với các giải pháp số tiên tiến và công nghệ hiện đại.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5>Tối ưu hóa quy trình</h5>
+                                <p>Tinh gọn hoạt động để tăng hiệu quả và giảm chi phí trong toàn tổ chức.</p>
+                            </div>
+                        </div>
+
+                        <a href="dich-vu.html" class="btn btn-primary-custom mt-3">
+                            <i class="fas fa-arrow-right me-2"></i>
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services Image -->
+                <div class="col-lg-6">
+                    <div class="services-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=500&fit=crop"
+                            alt="Phân tích bảng điều khiển" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Testimonials Section
+         ============================================ -->
+    <section class="testimonials-section section-padding" id="testimonials">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <span class="feature-label">
+                        <i class="fas fa-quote-left me-2"></i>
+                        Đánh giá
+                    </span>
+                    <h2 class="section-title">
+                        Khách hàng nói gì về chúng tôi
+                    </h2>
+                    <p class="section-subtitle">
+                        Khám phá cách chúng tôi đã giúp các doanh nghiệp đạt được mục tiêu và chuyển đổi hoạt động của
+                        họ.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
+                                alt="Nguyễn Thị Mai" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                "Làm việc với Saigontech đã thay đổi hoàn toàn công ty chúng tôi.
+                                Chuyên môn về chuyển đổi số giúp chúng tôi tăng hiệu quả lên 40%."
+                            </p>
+                            <h5 class="testimonial-name">Nguyễn Thị Mai</h5>
+                            <span class="testimonial-role">CEO, InnovateTech</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
+                                alt="Trần Văn Minh" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                "Đội ngũ tận tâm hiểu rõ những thách thức riêng của chúng tôi,
+                                đưa ra các giải pháp phù hợp hoàn hảo với nhu cầu. Rất khuyên dùng!"
+                            </p>
+                            <h5 class="testimonial-name">Trần Văn Minh</h5>
+                            <span class="testimonial-role">CTO, DataFlow Inc</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"
+                                alt="Lê Thị Hương" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                "Dịch vụ và hỗ trợ tuyệt vời! Họ giúp chúng tôi hiện đại hóa hệ thống cũ
+                                mà không làm gián đoạn hoạt động hàng ngày."
+                            </p>
+                            <h5 class="testimonial-name">Lê Thị Hương</h5>
+                            <span class="testimonial-role">Giám đốc, CloudServe</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop"
+                                alt="Phạm Đức Anh" class="testimonial-avatar">
+                            <p class="testimonial-text">
+                                "Từ chiến lược đến triển khai, Saigontech mang đến sự xuất sắc ở mọi bước.
+                                ROI của chúng tôi tăng đáng kể chỉ trong 6 tháng."
+                            </p>
+                            <h5 class="testimonial-name">Phạm Đức Anh</h5>
+                            <span class="testimonial-role">Nhà sáng lập, StartupHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Workplace Section
+         ============================================ -->
+    <section class="workplace-section section-padding" id="workplace">
+        <div class="container">
             <div class="row justify-content-center">
-                <!-- Member 1 -->
-                <div class="col-12 col-md-5 mb-4">
-                    <div class="sgtech-new-team-card">
-                        <img src="https://placehold.co/150x150/333/FFF?text=ST" class="sgtech-new-team-img"
-                            alt="Member">
-                        <div class="sgtech-new-team-info">
-                            <h5>Saigon Tech</h5>
-                            <span class="sgtech-new-team-role">CEO</span>
-                            <a href="#" class="btn btn-sm btn-primary">Kết nối</a>
-                        </div>
+                <div class="col-lg-8 text-center">
+                    <div class="workplace-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                </div>
-                <!-- Member 2 -->
-                <div class="col-12 col-md-5 mb-4">
-                    <div class="sgtech-new-team-card">
-                        <img src="https://placehold.co/150x150/333/FFF?text=NT" class="sgtech-new-team-img"
-                            alt="Member">
-                        <div class="sgtech-new-team-info">
-                            <h5>Nguyen Tech</h5>
-                            <span class="sgtech-new-team-role">CTO</span>
-                            <a href="#" class="btn btn-sm btn-primary">Kết nối</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients -->
-    <section class="sgtech-new-section-padding">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Khách Hàng Tiêu Biểu</h2>
-            </div>
-            <div class="row align-items-center justify-content-center text-center">
-                <div class="col-6 col-md-2 mb-4">
-                    <img src="https://placehold.co/150x80?text=Vingroup" class="sgtech-new-client-logo" alt="Client">
-                </div>
-                <div class="col-6 col-md-2 mb-4">
-                    <img src="https://placehold.co/150x80?text=FPT" class="sgtech-new-client-logo" alt="Client">
-                </div>
-                <div class="col-6 col-md-2 mb-4">
-                    <img src="https://placehold.co/150x80?text=Vietcombank" class="sgtech-new-client-logo" alt="Client">
-                </div>
-                <div class="col-6 col-md-2 mb-4">
-                    <img src="https://placehold.co/150x80?text=Techcombank" class="sgtech-new-client-logo" alt="Client">
-                </div>
-                <div class="col-6 col-md-2 mb-4">
-                    <img src="https://placehold.co/150x80?text=ThaiSon" class="sgtech-new-client-logo" alt="Client">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- News -->
-    <section class="sgtech-new-section-padding">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Tin Tức & Sự Kiện</h2>
-            </div>
-            <div class="row">
-                <!-- News 1 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="sgtech-new-news-card">
-                        <img src="https://placehold.co/400x250/222/fff?text=News+1" class="sgtech-new-news-img"
-                            alt="News">
-                        <div class="sgtech-new-news-body">
-                            <div class="sgtech-new-news-date">11 Jan 2023</div>
-                            <a href="#" class="sgtech-new-news-title">Trao đổi kỹ thuật số cho bạn cùng Saigon Tech</a>
-                            <a href="#" class="sgtech-new-read-more">Đọc tiếp »</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- News 2 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="sgtech-new-news-card">
-                        <img src="https://placehold.co/400x250/222/fff?text=News+2" class="sgtech-new-news-img"
-                            alt="News">
-                        <div class="sgtech-new-news-body">
-                            <div class="sgtech-new-news-date">11 Jan 2023</div>
-                            <a href="#" class="sgtech-new-news-title">Tham gia ngoi nha chung Indie Soft</a>
-                            <a href="#" class="sgtech-new-read-more">Đọc tiếp »</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- News 3 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="sgtech-new-news-card">
-                        <img src="https://placehold.co/400x250/222/fff?text=News+3" class="sgtech-new-news-img"
-                            alt="News">
-                        <div class="sgtech-new-news-body">
-                            <div class="sgtech-new-news-date">08 Jan 2023</div>
-                            <a href="#" class="sgtech-new-news-title">Giải pháp phần mềm hiện đại mở rộng kinh
-                                doanh...</a>
-                            <a href="#" class="sgtech-new-read-more">Đọc tiếp »</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="sgtech-new-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <a class="navbar-brand text-white mb-3 d-block" href="#">
-                        <img src="assets/images/footer_logo01.png" alt="Logo saigontech footer">
+                    <h2>
+                        Môi trường làm việc tập trung vào trải nghiệm và hỗ trợ đội nhóm làm việc hiệu quả hơn
+                    </h2>
+                    <p class="mt-4 mb-4" style="color: rgba(255,255,255,0.8);">
+                        Chúng tôi tin rằng đội ngũ tuyệt vời tạo ra sản phẩm tuyệt vời. Phương pháp hợp tác của chúng
+                        tôi
+                        kết hợp các tài năng đa dạng để tạo ra các giải pháp sáng tạo.
+                    </p>
+                    <a href="#" class="btn btn-primary-custom btn-lg">
+                        <i class="fas fa-play-circle me-2"></i>
+                        Xem Video
                     </a>
-                    <p class="small text-white-50">103, Building 8, Quang Trung Software City, HCM City, VietNam</p>
-                    <p class="small text-white-50">Tel: +84-986-758-048</p>
-                    <p class="small text-white-50">Email: hi@saigon-tech.vn</p>
-                    <div class="sgtech-new-social-icons mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         News Section
+         ============================================ -->
+    <section class="news-section section-padding" id="news">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <span class="feature-label">
+                        <i class="fas fa-newspaper me-2"></i>
+                        Tin tức mới nhất
+                    </span>
+                    <h2 class="section-title">
+                        Tin tức mới nhất cho doanh nghiệp và startup
+                    </h2>
+                    <p class="section-subtitle">
+                        Cập nhật các xu hướng, thông tin và mẹo mới nhất để phát triển doanh nghiệp của bạn.
+                    </p>
+                </div>
+            </div>
+
+            <!-- News Cards -->
+            <div class="row g-4">
+                <!-- News Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <div class="news-card-image">
+                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop"
+                                alt="Chiến lược tăng trưởng kinh doanh">
+                        </div>
+                        <div class="news-card-content">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    15/12/2025
+                                </span>
+                                <span class="news-category">Kinh doanh</span>
+                            </div>
+                            <h4>
+                                <a href="#">
+                                    10 Chiến lược tăng trưởng bền vững cho doanh nghiệp năm 2026
+                                </a>
+                            </h4>
+                            <p class="news-excerpt">
+                                Khám phá các chiến lược đã được chứng minh giúp doanh nghiệp đạt được tăng trưởng bền
+                                vững
+                                đồng thời duy trì hiệu quả hoạt động.
+                            </p>
+                            <div class="news-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop"
+                                    alt="Nguyễn Văn Hùng">
+                                <span class="news-author-name">Nguyễn Văn Hùng</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <div class="news-card-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop"
+                                alt="Chuyển đổi số">
+                        </div>
+                        <div class="news-card-content">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    12/12/2025
+                                </span>
+                                <span class="news-category">Công nghệ</span>
+                            </div>
+                            <h4>
+                                <a href="#">
+                                    AI đang định hình lại các sáng kiến chuyển đổi số như thế nào
+                                </a>
+                            </h4>
+                            <p class="news-excerpt">
+                                Khám phá cách trí tuệ nhân tạo đang cách mạng hóa cách các doanh nghiệp
+                                tiếp cận chuyển đổi số.
+                            </p>
+                            <div class="news-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop"
+                                    alt="Trần Thị Lan">
+                                <span class="news-author-name">Trần Thị Lan</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <div class="news-card-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+                                alt="Gọi vốn startup">
+                        </div>
+                        <div class="news-card-content">
+                            <div class="news-meta">
+                                <span class="news-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    10/12/2025
+                                </span>
+                                <span class="news-category">Startup</span>
+                            </div>
+                            <h4>
+                                <a href="#">
+                                    Gọi vốn: Hướng dẫn hoàn chỉnh cho Startup giai đoạn đầu
+                                </a>
+                            </h4>
+                            <p class="news-excerpt">
+                                Tìm hiểu các bước thiết yếu để gọi vốn cho startup của bạn, từ chuẩn bị pitch
+                                đến chốt deal.
+                            </p>
+                            <div class="news-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop"
+                                    alt="Lê Minh Tuấn">
+                                <span class="news-author-name">Lê Minh Tuấn</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Newsletter Section
+         ============================================ -->
+    <section class="newsletter-section section-padding" id="newsletter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2>Đăng ký nhận bản tin</h2>
+                    <p>
+                        Nhận tin tức mới nhất, cập nhật và ưu đãi độc quyền trực tiếp vào hộp thư của bạn.
+                        Tham gia cộng đồng các doanh nghiệp tiên phong.
+                    </p>
+
+                    <!-- Newsletter Form -->
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Nhập địa chỉ email của bạn" required>
+                            <button type="submit" class="btn btn-primary-custom">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Đăng ký
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Partner Logos -->
+                    <div class="partner-logos mt-5">
+                        <img src="assets/images/SEK_logo.png" alt="SEK Logo" class="img-fluid">
+                        <img src="assets/images/StickKAR_logo.png" alt="StickKAR Logo" class="img-fluid">
+                        <img src="assets/images/bediffy_logo.png" alt="Bediffy Logo" class="img-fluid">
+                        <img src="assets/images/kisscurls_logo.png" alt="Kisscurls Logo" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Hành trình</h5>
-                    <ul class="list-unstyled sgtech-new-footer-links">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Footer Section
+         ============================================ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Brand Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <a href="index.html" class="footer-brand">
+                        <img src="assets/images/footer_logo01.png" alt="saigon-tech Logo footer">
+                    </a>
+                    <p class="footer-description">
+                        Chúng tôi giúp doanh nghiệp phát triển trong thời đại số thông qua các giải pháp công nghệ sáng
+                        tạo
+                        và dịch vụ tư vấn chiến lược.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="footer-links">
                         <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="gioi-thieu.html">Về chúng tôi</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
                         <li><a href="dich-vu.html">Dịch vụ</a></li>
                         <li><a href="lien-he.html">Liên hệ</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Liên kết nhanh</h5>
-                    <ul class="list-unstyled sgtech-new-footer-links">
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Careers</a></li>
+
+                <!-- Services -->
+                <div class="col-6 col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Dịch vụ</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Tư vấn</a></li>
+                        <li><a href="#">Phát triển</a></li>
+                        <li><a href="#">Phân tích</a></li>
+                        <li><a href="#">Tự động hóa</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Bản đồ</h5>
-                    <div class="bg-dark text-white d-flex align-items-center justify-content-center">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4317770202115!2d106.62579127684751!3d10.854727389298876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175299b0dc0fac1%3A0x18cc9eb46570a21e!2sQTSC%208%20Building!5e0!3m2!1sen!2s!4v1767340015495!5m2!1sen!2s"
-                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Liên hệ</h5>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>103, Building 8, Quang Trung Software City, HCM City, VietNam</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+84 986 758 048</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>hi@saigon-tech.vn</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Thứ 2 - Thứ 6: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="sgtech-new-footer-bottom">
-                <p class="m-0">Copyright © 2023 SaigonTech. All Rights Reserved.</p>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 Saigontech. Bảo lưu mọi quyền.
+                    <a href="#" style="color: var(--primary-color);">Chính sách bảo mật</a> |
+                    <a href="#" style="color: var(--primary-color);">Điều khoản dịch vụ</a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
 
